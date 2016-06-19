@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TeamMember.h"
 #import "TeamDetailViewController.h"
 
 @interface TeamViewController : UIViewController
+
+@property (strong, nonatomic) TeamMember *teamMemberToPass;
 
 
 @end

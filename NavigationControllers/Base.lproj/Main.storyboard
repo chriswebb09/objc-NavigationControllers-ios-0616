@@ -24,20 +24,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="teamMemberAlTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oeD-mK-hoN"/>
-                                    <segue destination="mKz-5K-FLT" kind="show" id="coR-4m-uiQ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUU-Aq-7b6">
-                                <rect key="frame" x="174" y="138" width="110" height="120"/>
-                                <accessibility key="accessibilityConfiguration" label="joeImage"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" backgroundImage="joe">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="teamMemberJoeTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gy5-eh-GLE"/>
-                                    <segue destination="mKz-5K-FLT" kind="show" id="clc-k4-9jC"/>
+                                    <segue destination="mKz-5K-FLT" kind="show" identifier="alSegue" id="xN5-Wx-FB0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIu-yK-Br8">
@@ -48,8 +35,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="teamMemberAviTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cpC-fw-aPf"/>
-                                    <segue destination="mKz-5K-FLT" kind="show" id="QPT-ta-LWx"/>
+                                    <segue destination="mKz-5K-FLT" kind="show" identifier="aviSegue" id="gBK-50-sSg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqs-U2-von">
@@ -60,8 +46,18 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="teamMemberChrisTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CCw-oV-aBU"/>
-                                    <segue destination="mKz-5K-FLT" kind="show" id="pEb-iE-MXF"/>
+                                    <segue destination="mKz-5K-FLT" kind="show" identifier="chrisSegue" id="MWR-sG-urY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUU-Aq-7b6">
+                                <rect key="frame" x="174" y="138" width="110" height="120"/>
+                                <accessibility key="accessibilityConfiguration" label="joeImage"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" backgroundImage="joe">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mKz-5K-FLT" kind="show" identifier="joeSegue" id="2x1-TY-877"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -156,6 +152,6 @@
         <image name="joe" width="300" height="331"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="pEb-iE-MXF"/>
+        <segue reference="gBK-50-sSg"/>
     </inferredMetricsTieBreakers>
 </document>

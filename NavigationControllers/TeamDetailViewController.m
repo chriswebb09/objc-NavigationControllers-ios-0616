@@ -9,16 +9,20 @@
 #import "TeamDetailViewController.h"
 @interface TeamDetailViewController()
 
-@property (weak, nonatomic) IBOutlet UIImageView *photo;
-@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
-@property (weak, nonatomic) IBOutlet UILabel *phoneNumberLabel;
-@property (weak, nonatomic) IBOutlet UILabel *birthPlaceLabel;
-@property (weak, nonatomic) IBOutlet UILabel *favoriteBandLabel;
-
 @end
 
 @implementation TeamDetailViewController
 
-
+- (void)viewWillAppear:(BOOL)animated{
+    //[super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.photo.image = self.passedPhoto;
+    self.nameLabel.text = self.passedName;
+    self.phoneNumberLabel.text = self.passedPhoneNumber;
+    self.birthPlaceLabel.text = self.passedBirthPlace;
+    self.favoriteBandLabel.text = self.passedFavoriteBand;
+    
+}
 
 @end
