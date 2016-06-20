@@ -20,7 +20,12 @@
 
 -(instancetype)init;
 
--(instancetype)initWithName:(NSString *)name PhoneNumber:(NSString *)phoneNumber Photo:(NSString*)photo BirthCity:(NSString*)birthCity BirthState:(NSString *)birthState FavoriteBand:(NSString *)favoriteBand ;
+-(instancetype)initWithName:(NSString *)name
+                PhoneNumber:(NSString *)phoneNumber
+                      Photo:(NSString *)photo
+                  BirthCity:(NSString *)birthCity
+                 BirthState:(NSString *)birthState
+               FavoriteBand:(NSString *)favoriteBand;
 
 -(UIImage *)getTeamMemberPhoto:(NSString *)photo;
 

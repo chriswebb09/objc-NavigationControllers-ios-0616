@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *phoneNumberLabel;
 @property (weak, nonatomic) IBOutlet UILabel *birthPlaceLabel;
 @property (weak, nonatomic) IBOutlet UILabel *favoriteBandLabel;
+
 @property (strong, nonatomic) UIImage *passedPhoto;
 @property (strong, nonatomic) NSString *passedName;
 @property (strong, nonatomic) NSString *passedPhoneNumber;
